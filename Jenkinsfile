@@ -13,6 +13,8 @@ pipeline {
           stage('Testing Env') {
             steps {
                 sh 'firebase deploy -P testing-env-denvet --token "$FIREBASE_DEPLOY_TOKEN"'
+                //Añadir testing
+                //Usar SELENIUM para automation testing
             }
          }
 
